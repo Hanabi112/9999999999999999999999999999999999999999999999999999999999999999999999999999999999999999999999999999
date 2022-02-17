@@ -1,10 +1,12 @@
 local PlaceId = game.PlaceId
 
-if PlaceId == 2753915549 then
-      	game.Players.LocalPlayer:kick("กูไม่ให้ใช้สคริปกับเกมนี้ครับไอโง่สถุน")
-    wait(1)
-    game:Shutdown()
+
+if PlaceId == 2753915549 or PlaceId == 4442272183 or PlaceId == 7449423635 then
+game.Players.LocalPlayer:kick("กูไม่ให้ใช้สคริปกับเกมนี้ครับไอโง่สถุน")
+wait(1)
+game:Shutdown()
 end
+
 wait(.1)
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Patskorn/GUI/main/Copy-SynapOver.lua"))()
 local GUI = library:new("","[ RightControl ]")
