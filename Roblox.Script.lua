@@ -1,6 +1,6 @@
 local PlaceId = game.PlaceId
 
-if PlaceId == 2753915549then
+if PlaceId == 2753915549 then
       	game.Players.LocalPlayer:kick("กูไม่ให้ใช้สคริปกับเกมนี้ครับไอโง่สถุน")
     wait(1)
     game:Shutdown()
