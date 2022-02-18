@@ -20,7 +20,7 @@ end)
 Main:Toggle("Auto Spam",nil,function(value)
 spam = value
 
-while wait(.1) do
+while wait(.0) do
 if spam then
     local args = {
     [1] = Say,
@@ -32,10 +32,38 @@ end
 end
 end)
 
-Cr:Button("Credit Ui Synap1_x🖤🥀#9999",function()
-    setclipboard("Synap1_x🖤🥀#9999")
+
+Main:Toggle("Auto Play Song",nil,function(value)
+    game.workspace["MUSIC_FUNCTION1"].SoundId = Music1
+    game.workspace["MUSIC_FUNCTION1"].Playing = value
+end)
+Instance.new("Sound", game:GetService("Workspace")).Name = "MUSIC_FUNCTION1"
+Instance.new("Sound", game:GetService("Workspace")).Volume = 5
+Instance.new("Sound", game:GetService("Workspace")).Looped = true
+
+Main:TextBox("Soun Id",function(value)
+    Music1 = value
 end)
 
 Cr:Button("Credit Hub Ui Star X Hub",function()
 setclipboard("https://discord.gg/UweqRx6DRX")
+end)
+
+Main:Button("Go ku",function()
+    spawn(function()
+        pcall(function()
+        local Fire = Instance.new("Fire")
+        Fire.Parent = game.Players.LocalPlayer.Character.Head
+        Fire.Heat = Heat
+        Fire.Size = Size
+        end)
+    end)
+end)
+
+Main:TextBox("Heat Fire",function(value)
+    Heat = value
+end)
+
+Main:TextBox("Size Fire",function(value)
+    Size = value
 end)
