@@ -46,8 +46,8 @@ Main:Textbox("Sound Id", "Pls Enter Soun Id", value, function(value)
     Music1 = value
 end)
 
-Cr:Button("Credit Hub Ui Star X Hub",function()
-setclipboard("https://discord.gg/UweqRx6DRX")
+Cr:Button("Credit Hub Ui Table Hub",function()
+setclipboard("discord.gg/tablehub")
 end)
 
 Main:Button("Go ku",function()
