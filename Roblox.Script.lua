@@ -87,12 +87,6 @@ Main:Button("Game Shutdown", function()
     game:Shutdown()
 end)
   Main:Button("Server Hop", function()
-        game:GetService("StarterGui"):SetCore("SendNotification",
-                                            {
-                                                Title = "Ability Hub",
-                                                Text = "Teleport Working..."
-                                            }
-                                        )
         Teleport()
     end)
     local PlaceID = game.PlaceId
