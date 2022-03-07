@@ -46,6 +46,14 @@ Main:Textbox("Sound Id", "Pls Enter Soun Id", value, function(value)
     Music1 = value
 end)
 
+Main:Button("Copy Sound",function()
+    setclipboard("rbxassetid://5284661236 -- SoundID")
+end)
+
+Main:Button("Rejoin",function()
+    game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").localPlayer)
+end)
+
 Cr:Button("Credit Hub Ui Table Hub",function()
 setclipboard("discord.gg/tablehub")
 end)
