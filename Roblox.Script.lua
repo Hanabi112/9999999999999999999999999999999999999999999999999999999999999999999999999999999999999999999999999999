@@ -35,7 +35,7 @@ end)
 
 
 Main:Toggle("Auto Play Song",nil,function(value)
-    game.workspace["MUSIC_FUNCTION1"].SoundId = Music1
+    game.workspace["MUSIC_FUNCTION1"].SoundId = Music2
     game.workspace["MUSIC_FUNCTION1"].Playing = value
 end)
 Instance.new("Sound", game:GetService("Workspace")).Name = "MUSIC_FUNCTION1"
@@ -43,11 +43,11 @@ Instance.new("Sound", game:GetService("Workspace")).Volume = 5
 Instance.new("Sound", game:GetService("Workspace")).Looped = true
 
 Main:Textbox("Sound Id", "Pls Enter Soun Id", value, function(value)
-    Music1 = value
+    Music2 = ("rbxassetid://"..value)
 end)
 
 Main:Button("Copy Sound",function()
-    setclipboard("rbxassetid://5284661236 -- SoundID")
+    setclipboard("5284661236 -- SoundId")
 end)
 
 Cr:Button("Credit Hub Ui Table Hub",function()
