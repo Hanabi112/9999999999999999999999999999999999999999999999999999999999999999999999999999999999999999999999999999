@@ -1,12 +1,3 @@
-local PlaceId = game.PlaceId
-
-
-if PlaceId == 2753915549 or PlaceId == 4442272183 or PlaceId == 7449423635 then
-game.Players.LocalPlayer:kick("กูไม่ให้ใช้สคริปกับเกมนี้ครับไอโง่สถุน")
-wait(1)
-game:Shutdown()
-end
-
 wait(.1)
 local DiscordLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/N0Fee1/Ui-TableHub/main/Ui.lua"))()
 local win = DiscordLib:Window("Blox Fruits")
